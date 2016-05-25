@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    tools:showIn="@layout/activity_main">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:clickable="true"
+        android:columnWidth="90dp"
+        android:drawSelectorOnTop="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:horizontalSpacing="13dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progress_size"
+        android:layout_height="@dimen/progress_size"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:barColor="@color/md_grey_500"
+        app:progressIndeterminate="true" />
+
+</RelativeLayout>

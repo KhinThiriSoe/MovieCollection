@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Movie Collection</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">Detail Movie</string>
+
+    <string name="action_refresh">Refresh</string>
+
+    <string name="pref_sort_order_label">Sorted By</string>
+    <string name="pref_sort_order_key" translatable="false">sort</string>
+
+    <string name="pref_popularity" translatable="false">Popularity</string>
+    <string name="pref_user_rating" translatable="false">User Rating</string>
+
+</resources>
