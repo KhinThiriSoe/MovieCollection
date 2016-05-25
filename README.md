@@ -1,6 +1,6 @@
 # MovieCollection
 
-The app is the Final project Stage 1 of Developing Android Apps course from [Udacity](https://www.udacity.com/course/viewer#!/c-ud853/l-4353948561/m-4328734595).
+ Final project Stage 1 of Developing Android Apps course from [Udacity](https://www.udacity.com/course/viewer#!/c-ud853/l-4353948561/m-4328734595).
  
  App includes:
   - grid arrangement of movie posters
@@ -14,6 +14,6 @@ The app is the Final project Stage 1 of Developing Android Apps course from [Uda
     - release date
     
 What I've learned after this app :
-  -  AsynTask
+  - AsynTask
   - custom adapter
   - Picasso library
