@@ -17,4 +17,3 @@ What I've learned after this app :
   -  AsynTask
   - custom adapter
   - Picasso library
-# MyMovieCollection
