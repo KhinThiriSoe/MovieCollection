@@ -6,12 +6,7 @@
   - grid arrangement of movie posters
   - sort order via a setting
   - sort order can be by most popular or by highest-rated
-  - transition to a details screen with additional information such as:
-    - original title
-    - movie poster image thumbnail
-    - movie overview
-    - user rating 
-    - release date
+  - transition to a details screen with additional information
     
 What I've learned after the app :
   - AsynTask
