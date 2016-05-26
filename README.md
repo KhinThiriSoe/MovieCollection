@@ -13,7 +13,7 @@
     - user rating 
     - release date
     
-What I've learned after this app :
+What I've learned after the app :
   - AsynTask
   - custom adapter
   - Picasso library
