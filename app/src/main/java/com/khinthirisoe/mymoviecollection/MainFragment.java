@@ -60,7 +60,7 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        gridView = (GridView)view.findViewById(R.id.gridView);
+        gridView = (GridView) view.findViewById(R.id.gridView);
         progressBar = (ProgressWheel) view.findViewById(R.id.progressBar);
 
         progressBar.setVisibility(View.VISIBLE);
@@ -182,17 +182,28 @@ public class MainFragment extends Fragment {
 
     private void SortedBy() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-        int value = Integer.parseInt((prefs.getString(getString(R.string.pref_sort_order_key), getString(R.string.pref_popularity))));
-        Log.d(TAG, String.valueOf(value));
-        if (value == 1) {
-            Collections.sort(mGridDataArr, GridItem.RatingComparator);
+//        int value = Integer.parseInt((prefs.getString(getString(R.string.pref_sort_order_key), getString(R.string.pref_sort_default))));
 
-        } else if (value == 0) {
+        String sort = prefs.getString(getString(R.string.pref_sort_order_key), getString(R.string.pref_sort_popularity));
+        Log.d(TAG, sort);
+
+        if (sort.equals(getString(R.string.pref_sort_popularity))) {
             Collections.sort(mGridDataArr, GridItem.PopularityComparator);
+        } else if (sort.equals(getString(R.string.pref_sort_user_rating))) {
+            Collections.sort(mGridDataArr, GridItem.RatingComparator);
+        } else {
+            Snackbar.make(progressBar, "neither of them is selected", Snackbar.LENGTH_SHORT).show();
         }
-        else {
-            Snackbar.make(progressBar,"neither of them is selected",Snackbar.LENGTH_SHORT).show();
-        }
+
+//        if (value == 1) {
+//            Collections.sort(mGridDataArr, GridItem.RatingComparator);
+//
+//        } else if (value == 0) {
+//            Collections.sort(mGridDataArr, GridItem.PopularityComparator);
+//        }
+//        else {
+//            Snackbar.make(progressBar,"neither of them is selected",Snackbar.LENGTH_SHORT).show();
+//        }
     }
 
     @Override
