@@ -1,5 +1,6 @@
-# This app is for Final project Stage 1 of ["Developing Android Apps"](https://www.udacity.com/course/developing-android-apps--ud853) course from [Udacity](www.udacity.com). 
-### The purposes are:
+# This app is for Final project Stage 1 of ["Developing Android Apps"](https://www.udacity.com/course/developing-android-apps--ud853) course from [Udacity](www.udacity.com).
+
+### The app contains:
 
 - grid arrangement of movie posters
 - sort order via a setting
