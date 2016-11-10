@@ -12,3 +12,4 @@
 - custom adapter
 - Picasso library
 
+#### project done on March, 2016
