@@ -1,4 +1,5 @@
-# This app is for Final project Stage 1 of ["Developing Android Apps"](https://www.udacity.com/course/developing-android-apps--ud853) course from [Udacity](www.udacity.com).
+# MovieCollection
+### This app is for Final project Stage 1 of ["Developing Android Apps"](https://www.udacity.com/course/developing-android-apps--ud853) course from [Udacity](www.udacity.com).
 
 ### The app contains the following features:
 
@@ -9,7 +10,7 @@
 
 ### What I've learned after the app :
 
-- synTask
+- AsynTask
 - custom adapter
 - Picasso library
 
