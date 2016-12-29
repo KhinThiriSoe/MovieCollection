@@ -140,6 +140,7 @@ public class MainFragment extends Fragment {
     @Override
     public void onResume() {
         mGridAdapter.setGridData(mGridDataArr);
+        SortedBy();
         super.onResume();
     }
 
@@ -182,12 +183,12 @@ public class MainFragment extends Fragment {
 
     private void SortedBy() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-        int value = Integer.parseInt((prefs.getString(getString(R.string.pref_sort_order_key), getString(R.string.pref_popularity))));
+        String value = ((prefs.getString(getString(R.string.pref_sort_order_key), getString(R.string.pref_popularity))));
         Log.d(TAG, String.valueOf(value));
-        if (value == 1) {
+        if (value.equals("1")) {
             Collections.sort(mGridDataArr, GridItem.RatingComparator);
 
-        } else if (value == 0) {
+        } else if (value.equals("0")) {
             Collections.sort(mGridDataArr, GridItem.PopularityComparator);
         }
         else {
